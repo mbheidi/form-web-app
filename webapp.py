@@ -15,7 +15,7 @@ def render_response():
     if name == 'Heidi':
         reply = "That's a cool name"
     else:
-        reply = "I need help with my homework"
+        reply = "That's a pretty name"
     return render_template('response.html', response = reply)
     
 if __name__=="__main__":
