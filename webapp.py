@@ -15,7 +15,8 @@ def render_response():
     if list == 'Tell me a joke':
         reply = "Sure! Why was the math book sad? Because it had so many problems hahaha"
     else:
-        reply = "Try some of these! This link provides over 80 fun activities to do when you're bored!"
+        reply = "Try some of these! This link provides over 80 fun activities to do when you're bored!  
+        https://www.goodhousekeeping.com/life/a26872864/what-to-do-when-bored/"
     return render_template('response.html', response = reply)
     
 if __name__=="__main__":
