@@ -15,7 +15,7 @@ def render_response():
     if list == 'Tell me a joke':
         reply = "Sure! Why was the math book sad? Because it had so many problems hahaha"
     else:
-        reply = "My favorite color is pink."
+        reply = "Do you need some ideas? I recommend to call a friend, go outdoors, play boardgames, read, write, or draw :D"
     return render_template('response.html', response = reply)
     
 if __name__=="__main__":
