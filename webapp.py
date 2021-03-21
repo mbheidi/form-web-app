@@ -12,10 +12,10 @@ def render_response():
     #The request object stores information about the request sent to the server.
     #args is an ImmutableMultiDict (like a dictionary but can have mutliple values for the same key and can't be changed)
     #The information in args is visible in the url for the page being requested. ex. .../response?color=blue
-    if list == 'pink':
-        reply = "That's my favorite color, too!"
+    if list == 'Tell me a joke':
+        reply = "Sure! Why was the math book sad? Because it had so many problems hahaha"
     else:
-        reply = "My favorite color is pink."
+        reply = "Try some of these! This link provides over 80 fun activities to do when you're bored!"
     return render_template('response.html', response = reply)
     
 if __name__=="__main__":
