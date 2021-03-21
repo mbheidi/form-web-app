@@ -1,6 +1,6 @@
 from flask import Flask, url_for, render_template, request
 
-app = Flask(__name__) #__name__ = "__main__" if this is the file that was run.  Otherwise, it is the name of the file (ex. webapp)
+app = Flask(webapp) #__name__ = "__main__" if this is the file that was run.  Otherwise, it is the name of the file (ex. webapp)
 
 @app.route("/")
 def render_main():
@@ -18,5 +18,5 @@ def render_response():
         reply = "Try some of these! This link provides over 80 fun activities to do when you're bored!"
     return render_template('response.html', response = reply)
     
-if __name__=="__main__":
+if webapp=="main":
     app.run(debug=False, port=54321)
