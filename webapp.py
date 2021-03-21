@@ -15,7 +15,7 @@ def render_response():
     if list == 'Tell me a joke':
         reply = "Sure! Why was the math book sad? Because it had so many problems hahaha"
     else:
-  reply = "Here are some cool activities that you can try if you are bored: play videogames, watch funny YouTube videos, cook, write, watch a movie or draw!"
+  reply = "Have you tried calling a friend or learning a new skill?"
 
 
     return render_template('response.html', response = reply)
